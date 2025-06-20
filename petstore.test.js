@@ -3,13 +3,13 @@ const axios = require('axios');
 const BASE_URL = 'https://petstore.swagger.io/v2';
 
 describe('Petstore API Tests', () => {
-  let petId = 123456;
+  let petId = 1104;
 
   test('POST /pet - Add new pet', async () => {
     const response = await axios.post(`${BASE_URL}/pet`, {
       id: petId,
-      name: 'Garfield',
-      photoUrls: ['http://example.com/photo.jpg'],
+      name: 'Cat News by IDN Times',
+      photoUrls: ['https://short-link.me/157y1'],
       status: 'available'
     });
 
